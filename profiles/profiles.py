@@ -3,6 +3,8 @@ CH4ESE - Conversion Helper 4 Easy Serialization of EXI
 Copyright 2024, Battelle Energy Alliance, LLC
 """
 
+import pathlib
+
 # Profile folder paths may need to be customized depending on execution location
 # Profile Template:
 """
@@ -19,7 +21,7 @@ Copyright 2024, Battelle Energy Alliance, LLC
 
 profiles = {
     "din": {
-        "Folder": "schemas_din",
+        "Folder": pathlib.Path(__file__).parent.parent / "schemas_din",
         "Files": {
             "V2G_CI_AppProtocol.xsd": {
                 "Grammar": None,
@@ -37,7 +39,7 @@ profiles = {
     },
     "din_proto":
     {
-        "Folder": "schemas_din",
+        "Folder": pathlib.Path(__file__).parent.parent / "schemas_din",
         "Files": {
             "V2G_CI_AppProtocol.xsd": {
                 "Grammar": None,
@@ -47,7 +49,7 @@ profiles = {
     },
     "din_msg":
     {
-        "Folder": "schemas_din",
+        "Folder": pathlib.Path(__file__).parent.parent / "schemas_din",
         "Files": {
             "V2G_CI_MsgDef.xsd": {
                 "Grammar": None,
@@ -57,7 +59,7 @@ profiles = {
     },
 
     "iso_15118":{
-        "Folder": "schemas_iso",
+        "Folder": pathlib.Path(__file__).parent.parent / "schemas_iso",
         "Files":{
             "V2G_CI_MsgDef.xsd": {
                 "Grammar": None,
