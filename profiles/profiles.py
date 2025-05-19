@@ -58,8 +58,8 @@ profiles = {
         }
     },
 
-    "iso_15118":{
-        "Folder": pathlib.Path(__file__).parent.parent / "schemas_iso",
+    "iso-2":{
+        "Folder": pathlib.Path(__file__).parent.parent / "schemas_iso-2",
         "Files":{
             "V2G_CI_MsgDef.xsd": {
                 "Grammar": None,
